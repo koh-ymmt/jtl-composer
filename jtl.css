@@ -58,11 +58,11 @@
 .jtl-westernSpace,
 .jtl-westernBracOpen,
 .jtl-westernBracClose {
-	margin-left: var(--jtl-negativeMargin-western);
-	margin-right: var(--jtl-negativeMargin-western);
+	margin-left: var(--jtl-margin-western);
+	margin-right: var(--jtl-margin-western);
 }
 
 .jtl-westernNumbers {
-	margin-left: var(--jtl-negativeMargin-number);
-	margin-right: var(--jtl-negativeMargin-number);
+	margin-left: var(--jtl-margin-number);
+	margin-right: var(--jtl-margin-number);
 }
