@@ -1,0 +1,68 @@
+:root {
+	--jtl-negativeMargin-fullWidth: 0.5em;
+	--jtl-margin-western: 0.15em;
+	--jtl-margin-number: 0.1em;
+	--jtl-narrowWidth-fullBracket: 0em;
+	--jtl-narrowWidth-fullPunctuation: 0em;
+	--jtl-narrowWidth-midDot: 0em;
+}
+
+.jtl-all.jtl-paragraphHead,
+.jtl-all.jtl-lineHead,
+.jtl-all.jtl-noSpaceBefore {
+	margin-left: 0;
+}
+.jtl-all.jtl-noSpaceAfter {
+	margin-right: 0;
+}
+
+.jtl-bracOpen {
+	margin-left: var(--jtl-narrowWidth-fullBracket);
+}
+.jtl-bracOpen.jtl-paragraphHead,
+.jtl-bracOpen.jtl-lineHead,
+.jtl-bracOpen.jtl-noSpaceBefore {
+	margin-left: calc(-1 * var(--jtl-negativeMargin-fullWidth));
+}
+
+.jtl-bracClose {
+	margin-right: var(--jtl-narrowWidth-fullBracket);
+}
+.jtl-punctuation {
+	margin-right: var(--jtl-narrowWidth-fullPunctuation);
+}
+.jtl-bracClose.jtl-noSpaceAfter,
+.jtl-punctuation.jtl-noSpaceAfter {
+	margin-right: calc(-1 * var(--jtl-negativeMargin-fullWidth));
+}
+
+.jtl-midDot.jtl-noSpaceAfter,
+.jtl-fullSpace.jtl-noSpaceAfter {
+	margin-right: calc(-0.5 * var(--jtl-negativeMargin-fullWidth));
+}
+.jtl-midDot.jtl-paragraphHead,
+.jtl-midDot.jtl-lineHead,
+.jtl-midDot.jtl-noSpaceBefore,
+.jtl-fullSpace.jtl-paragraphHead,
+.jtl-fullSpace.jtl-lineHead,
+.jtl-fullSpace.jtl-noSpaceBefore {
+	margin-left: calc(-0.5 * var(--jtl-negativeMargin-fullWidth));
+}
+
+.jtl-midDot {
+	margin-left: calc(-0.5 * var(--jtl-narrowWidth-midDot));
+	margin-right: calc(-0.5 * var(--jtl-narrowWidth-midDot));
+}
+
+.jtl-westernChars,
+.jtl-westernSpace,
+.jtl-westernBracOpen,
+.jtl-westernBracClose {
+	margin-left: var(--jtl-negativeMargin-western);
+	margin-right: var(--jtl-negativeMargin-western);
+}
+
+.jtl-westernNumbers {
+	margin-left: var(--jtl-negativeMargin-number);
+	margin-right: var(--jtl-negativeMargin-number);
+}
