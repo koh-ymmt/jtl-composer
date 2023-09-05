@@ -1,3 +1,9 @@
+/*
+	Author: koh-ymmt
+	License: MIT License
+	永久にベータ版です
+*/	
+
 const JTL = {
 
 	charClass: {
